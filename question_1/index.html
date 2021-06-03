@@ -14,15 +14,18 @@
   <div class="main-container">
 
     <div class="cols" id="left-col">
-      left sidebar
+      <input type="text" id="inputTxt" value="0" onchange="myFunction(this.value)" />
     </div>
 
     <div class="cols" id="mid-col" >
-      <input type="text" />
+      <select name="method" id="selector" onchange="execuet_selector()" > 
+        <option value="isPrime" >isPrime</option> 
+        <option value="isFibanacci">isFibanacci</option> 
+      </select>
     </div>
 
     <div class="cols" id="right-col">
-      right sidebar
+      Output
     </div>
 
   </div>
